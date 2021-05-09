@@ -5,6 +5,7 @@ import { SaleSum } from "types/sale";
 import { BASE_URL } from "utils/requests";
 
 
+
 type ChartData = {
 	labels: string[];
 	series: number[];
@@ -21,8 +22,6 @@ const DonutChart = () => {
 			const mySeries = data.map(x => x.sum);
 
 			setChartData({ labels: myLabels, series: mySeries});
-			console.log(chartData)
-
 		});
 	}, []);
 
